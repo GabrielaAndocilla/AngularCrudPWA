@@ -1,5 +1,23 @@
 # AngularFirebaseCrud
 
+This project was made in Angular 10, with integration in Firebase. As regards the storage of project data, Real time Data Base and DataStorage from Firebase are implemented. In the case that you want to implement your own Firebase account, you can replace the environment.ts file located in the environment folder.
+
+The project is focused for a PWA, so it has packages that allow Angular to work as a PWA.
+
+This project was based on these videos and documents:
+
+Videos:
+
+- https://www.youtube.com/watch?v=WND9mw3HiBM&t=3907s
+- https://www.youtube.com/watch?v=MbmQBcj0fTE
+- https://www.youtube.com/watch?v=G0bBLvWXBvc
+
+Documents:
+
+- https://www.techiediaries.com/angular-10-firebase-database-crud/
+- https://github.com/angular/angularfire
+- https://angular.io/start/start-deployment
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
 
 ## Development server
