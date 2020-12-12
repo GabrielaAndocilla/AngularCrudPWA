@@ -17,6 +17,13 @@ Documents:
 - https://www.techiediaries.com/angular-10-firebase-database-crud/
 - https://github.com/angular/angularfire
 - https://angular.io/start/start-deployment
+- https://pwa.ng/firebase
+
+In addition, this project has a tab that allows you to find the user's location, in this part you can change the google API on your own.
+
+The documentation you could follow:
+- https://www.freakyjolly.com/angular-google-maps-using-agm-core/
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
 
