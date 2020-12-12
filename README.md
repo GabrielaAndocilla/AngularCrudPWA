@@ -1,5 +1,31 @@
 # AngularFirebaseCrud
 
+This project was made in Angular 10, with integration in Firebase. As regards of the data storage of the project, Real time Data Base and DataStorage from Firebase were implemented. In the case that you want to implement your own Firebase account, you can replace the environment.ts file located in the environment folder.
+
+The project is focused for a PWA, so it has packages that allow Angular to work as a PWA.
+
+This project was based on these videos and documents:
+
+Videos:
+
+- https://www.youtube.com/watch?v=WND9mw3HiBM&t=3907s
+- https://www.youtube.com/watch?v=MbmQBcj0fTE
+- https://www.youtube.com/watch?v=G0bBLvWXBvc
+
+Documents:
+
+- https://www.techiediaries.com/angular-10-firebase-database-crud/
+- https://github.com/angular/angularfire
+- https://angular.io/start/start-deployment
+- https://pwa.ng/firebase
+- https://www.pwaexperts.io/tutoriales/convierte-aplicacion-angular-en-pwa
+
+In addition, this project has a tab that allows you to find the user's location, in this part you can change the google API on your own.
+
+The documentation you could follow:
+- https://www.freakyjolly.com/angular-google-maps-using-agm-core/
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
 
 ## Development server
