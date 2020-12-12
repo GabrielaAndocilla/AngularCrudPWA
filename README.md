@@ -18,6 +18,7 @@ Documents:
 - https://github.com/angular/angularfire
 - https://angular.io/start/start-deployment
 - https://pwa.ng/firebase
+- https://www.pwaexperts.io/tutoriales/convierte-aplicacion-angular-en-pwa
 
 In addition, this project has a tab that allows you to find the user's location, in this part you can change the google API on your own.
 
