@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "pwaangfrst"
+  },
+  "targets": {
+    "pwaangfrst": {
+      "hosting": {
+        "angular-firebase-crud": [
+          "pwaangfrst"
+        ]
+      }
+    }
+  }
+}

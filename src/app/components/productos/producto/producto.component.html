@@ -1,0 +1,82 @@
+<div class="card">
+    <div class="card-body">
+
+        <form #productForm="ngForm" (ngSubmit)="onSubmit(productForm)">
+            <!-- TO UPDATE -->
+            <div class="form-group" *ngIf='productoService.selectedProduct.imagen != null' > 
+              <img width=100%                   
+              name="imagen" 
+              [src]="productoService.selectedProduct.imagen"  >
+
+            </div>
+            <div class="form-group">
+              <input 
+                type="text"
+                class="form-control"
+                name="name"
+                #name="ngModel"
+                [(ngModel)]="productoService.selectedProduct.name"
+                placeholder="Nombre Producto"
+                >
+            </div>
+            <div class="form-group">
+                <input 
+                  type="text"
+                  class="form-control"
+                  name="categoria"
+                  #category="ngModel"
+                  [(ngModel)]="productoService.selectedProduct.categoria"
+                  placeholder="Agregar Categoria"
+                  >
+            </div>
+            <div class="form-group">
+              <input 
+                type="text"
+                class="form-control"
+                name="localizacion"
+                #location="ngModel"
+                [(ngModel)]="productoService.selectedProduct.localizacion"
+                placeholder="Agregar localizacion"
+                >
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                </div>
+                <input 
+                  type="number"
+                  class="form-control"
+                  name="precio"
+                  #price="ngModel"
+                  [(ngModel)]="productoService.selectedProduct.precio"
+                  placeholder="Agregar precio"
+                  >
+              </div>
+            </div>
+            <div class="form-group" style="overflow: hidden">
+                <input type="file" 
+                  capture="environment" (change)="upload($event)" accept="*.png.jpg" >
+            </div>
+  
+            <div class="form-group">
+              <button class="btn btn-primary"  type="submit">
+                  <i class="fas fa-plus-circle"></i> 
+                  <p  style="display: inline;" *ngIf="productoService.selectedProduct.$key" >Editar Producto</p>
+                  <p  style="display: inline;" *ngIf="!productoService.selectedProduct.$key" >Agregar Producto</p>
+
+              </button>
+              <button class="btn btn-secondary" type="reset" (click)="resetForm(productForm)">
+                  <i class="fas fa-sync-alt"></i> Resetear
+              </button>
+            </div>
+          </form>
+    </div>
+</div> 
+
+
+<ul>
+    <li *ngFor='let doc of productoService.myArray'>
+        {{doc.field}}
+    </li>
+</ul>

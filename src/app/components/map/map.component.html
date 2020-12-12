@@ -1,0 +1,14 @@
+<h2>Encuentra tu ubicación !!</h2>
+
+<agm-map
+  [latitude]="currentCenter.lat"
+  [longitude]="currentCenter.lng"
+  [zoom]="zoom"
+  #googleMap
+>
+  <agm-marker
+    [latitude]="currentCenter.lat"
+    [longitude]="currentCenter.lng"
+  ></agm-marker>
+</agm-map>
+
